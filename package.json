@@ -1,0 +1,18 @@
+{
+  "name": "day-1-points",
+  "version": "1.0.0",
+  "description": "Example using OpenLayers with Parcel",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "dependencies": {
+    "@types/ol": "^6.5.3",
+    "ol": "latest",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "browserslist": "defaults"
+}
