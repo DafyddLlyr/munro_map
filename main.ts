@@ -16,6 +16,9 @@ import { Fill, RegularShape, Stroke, Style } from 'ol/style';
 const container = document.getElementById('popup') as HTMLElement;
 const content = document.getElementById('popup-content') as HTMLElement;
 const closer = document.getElementById('popup-closer') as HTMLElement;
+const infoModal = document.getElementById('info-modal') as HTMLElement;
+const infoButton = document.getElementById('info') as HTMLElement;
+
 const munros: Feature<Point>[] = []
 
 const bgLayer = new TileLayer({
@@ -24,6 +27,9 @@ const bgLayer = new TileLayer({
     crossOrigin: '*'
   }),
 })
+
+infoButton.onclick = (e) => infoModal.classList.toggle('info-visible');
+infoModal.onclick = (e) => infoModal.classList.toggle('info-visible');
 
 const map = new Map({
   target: 'map',
@@ -67,7 +73,7 @@ const setupPopup = (coord: Coordinate, feature: RenderFeature | Feature<Geometry
       <hr />
       <p><b>Height:</b> <span>${props.height}m</span></p>
       <p><b>Region:</b> <span>${props.region}</span></p>
-      <p><b>Lat Long:</b> <span>[${props.latlng_lat}, ${props.latlng_lng}]</span></p>
+      <p><b>Lat Long:</b> <span>${props.latlng_lat}, ${props.latlng_lng}</span></p>
       <p><b>Grid Ref:</b> <span>${props.gridref_letters} ${props.gridref_eastings} ${props.gridref_northings}</span></p>
       <p><b>Meaning:</b> <span>${props.meaning}m</span></p>
     </div>

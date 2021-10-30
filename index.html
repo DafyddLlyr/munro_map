@@ -5,12 +5,32 @@
     <title>Munro Map</title>
     <link rel="icon" type="image/png" href="/favicon.ico"/>
     <link rel="stylesheet" href="styles.css" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');</style>
   </head>
   <body>
+    <nav class="nav">
+      <h1>Munro Map</h1>
+      <a href="#"class="info" id="info">
+        <span>&#8505;</span>
+      </a>
+    </nav>
     <div id="map"></div>
     <div id="popup" class="ol-popup">
       <a href="#" id="popup-closer" class="ol-popup-closer"></a>
       <div id="popup-content"></div>
+    </div>
+    <div id="info-modal" class="info-visible info-modal">
+      <div class="info-content">
+        <h2>About</h2>
+        <hr />
+        <p>MunroMap is a simple OpenLayers map created as part of the 2021 <a href="#">#30DayMapChallenge</a> for day 1 "Points".</p>
+        <br>
+        <p>Displayed are all 282 <a href="https://en.wikipedia.org/wiki/Munro">Munros</a>, which are mountains in Scotland over 3000ft tall.</p>
+        <br>
+        <p>Munro information is gathered from the <a href="https://munroapi.herokuapp.com/">Munro API</a>.</p>
+        <br>
+        <p>The repositroy can be found <a href="https://github.com/DafyddLlyr/munro_map"> here on GitHub</a>.</p>
+      </div>
     </div>
     <script src="./main.ts" type="module"></script>
   </body>

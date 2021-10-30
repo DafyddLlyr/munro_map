@@ -4,13 +4,70 @@ html,
 body {
   margin: 0;
   height: 100%;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 #map {
   position: absolute;
+  width: 100vw;
+  height: 95vh;
+}
+
+.nav {
+  background-color: lightgray;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.info {
+  background-color: blue;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 2vh;
+  height: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info > span {
+  color: white;
+  text-decoration: none;
+}
+
+.info-visible {
+  visibility: hidden;
+}
+
+.info-modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(47,79,79, 0.9);
+  position: absolute;
   top: 0;
-  bottom: 0;
-  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-content {
+  background-color: white;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  width: 30vw;
+}
+
+.info-content > h2 {
+  margin: 0;
 }
 
 .ol-popup {
@@ -58,7 +115,7 @@ body {
 
 .ol-popup-closer:after {
   content: "✖";
-  color: "black";
+  color: black;
 }
 
 .munro-name {
