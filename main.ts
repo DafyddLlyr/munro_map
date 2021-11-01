@@ -75,7 +75,7 @@ const setupPopup = (coord: Coordinate, feature: RenderFeature | Feature<Geometry
       <p><b>Region:</b> <span>${props.region}</span></p>
       <p><b>Lat Long:</b> <span>${props.latlng_lat}, ${props.latlng_lng}</span></p>
       <p><b>Grid Ref:</b> <span>${props.gridref_letters} ${props.gridref_eastings} ${props.gridref_northings}</span></p>
-      <p><b>Meaning:</b> <span>${props.meaning}m</span></p>
+      <p><b>Meaning:</b> <span>${props.meaning}</span></p>
     </div>
     `
   content!.innerHTML = munroDetails;

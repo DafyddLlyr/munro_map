@@ -5,6 +5,7 @@ body {
   margin: 0;
   height: 100%;
   font-family: 'Comfortaa', sans-serif;
+  font-size: small;
 }
 
 #map {
@@ -21,10 +22,12 @@ body {
   padding: 0 2vw;
   margin: 0;
   justify-content: space-between;
+  background-color: #8bc34a;
+  color: white;
 }
 
 .info {
-  background-color: blue;
+  background-color: #3b561c;
   font-weight: bold;
   border-radius: 50%;
   width: 2vh;
