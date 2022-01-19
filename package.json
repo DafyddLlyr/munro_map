@@ -9,7 +9,7 @@
   "dependencies": {
     "@types/ol": "^6.5.3",
     "axios": "^0.24.0",
-    "ol": "latest",
+    "ol": "6.10.0",
     "proj4": "^2.7.5",
     "typescript": "^4.4.4"
   },
