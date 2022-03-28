@@ -11,7 +11,7 @@
     "axios": "^0.24.0",
     "ol": "latest",
     "proj4": "^2.7.5",
-    "typescript": "^4.4.4"
+    "typescript": "^4.6.3"
   },
   "devDependencies": {
     "@types/proj4": "^2.5.2",
