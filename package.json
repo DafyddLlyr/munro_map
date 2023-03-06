@@ -7,7 +7,7 @@
     "build": "parcel build --public-url . index.html"
   },
   "dependencies": {
-    "@types/ol": "^6.5.3",
+    "@types/ol": "^7.0.0",
     "axios": "^0.24.0",
     "ol": "latest",
     "proj4": "^2.7.5",
